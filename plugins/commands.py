@@ -83,7 +83,7 @@ async def video(c, m):
 
 @Client.on_message(filters.private & filters.command(["convtofile"]))
 async def file(c, m):
-    if Config.BOT_PWD:
+  if Config.BOT_PWD:
       if (m.from_user.id not in Config.LOGGED_USER) & (m.from_user.id not in Config.AUTH_USERS):
           await m.reply_text(text=Translation.NOT_LOGGED_TEXT, quote=True)
           return
