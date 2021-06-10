@@ -71,11 +71,11 @@ You access will be revoke by tomorrow"""
 #DON'T CHANGE THE NUMBERS IN THE FLOWER BRACKETS AND THE ORDER OF PERCENTAGE, DONE, TOTAL, SPEED, ETA ONLY CHANGE THE THEME 
 
       PROGRESS = """
-**Percentage :{0}%**
-**Done: {1}**
-**Total: {2}**
-**Speed: {3}/s**
-**ETA: {4}**
+**Percentage :〘 {0}% 〙**
+**Done:〘 {1} 〙**
+**Total:〘 {2} 〙**
+**Speed:〘 {3}/s 〙**
+**ETA:〘 {4} 〙**
 """
        
       DOWNLOAD_PROGRESS = "▪️"
