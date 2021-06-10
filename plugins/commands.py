@@ -75,7 +75,6 @@ async def video(c, m):
           pass
   if m.from_user.id in Config.BANNED_USER:
       await c.send_message(chat_id=m.chat.id, text=Translation.BANNED_TEXT)
-      return
   if m.from_user.id not in Config.BANNED_USER:
       if m.reply_to_message is not None:
           await download(c, m)
