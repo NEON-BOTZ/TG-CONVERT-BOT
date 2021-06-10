@@ -34,31 +34,36 @@ ATART_BUTTONS = InlineKeyboardMarkup(
 
 @Client.on_message(filters.private & filters.command(["start"]))
 async def start(c, m):
-    await c.send_message(chat_id=m.chat.id,
-                         text=Translation.START.format(m.from_user.first_name, Config.USER_NAME),
-                         reply_to_message_id=m.message_id
-                         reply_markup=START_BUTTONS)
+    await c.send_message(
+        chat_id=m.chat.id,
+        text=Translation.START.format(m.from_user.first_name, Config.USER_NAME),
+        reply_to_message_id=m.message_id,
+        reply_markup=START_BUTTONS
+    )
     logger.info(f"{m.from_user.first_name} used start command")
 
 
 
 @Client.on_message(filters.private & filters.command(["help"]))
 async def help(c, m):
-    await c.send_message(chat_id=m.chat.id,
-                         text=Translation.HELP,
-                         reply_to_message_id=m.message_id,
-                         reply_markup=HTART_BUTTONS)
-                         parse_mode="markdown")
-
+    await c.send_message(
+        chat_id=m.chat.id,
+        text=Translation.HELP,
+        reply_to_message_id=m.message_id,
+        reply_markup=HTART_BUTTONS,
+        parse_mode="markdown"
+    )
 
 @Client.on_message(filters.private & filters.command(["about"]))
 async def about(c, m):
-    await c.send_message(chat_id=m.chat.id,
-                         text=Translation.ABOUT,
-                         disable_web_page_preview=True,
-                         reply_to_message_id=m.message_id,
-                         reply_markup=ATART_BUTTONS)
-                         parse_mode="markdown")
+    await c.send_message(
+        chat_id=m.chat.id,
+        text=Translation.ABOUT,
+        disable_web_page_preview=True,
+        reply_to_message_id=m.message_id,
+        reply_markup=ATART_BUTTONS,
+        parse_mode="markdown"
+    )
 
 @Client.on_message(filters.private & filters.command(["convtovideo"]))
 async def video,(c, m):
