@@ -19,9 +19,9 @@ __For More Details check Help 📜__
 
 2. Send me the thumbnail(photo) optional.
 
-3. Reply to video /contofile for converting into file.
+3. Reply to video /convtofile for converting into file.
 
-4. Reply to file /contovideo for converting into video.
+4. Reply to file /convtovideo for converting into video.
 """
 
 
