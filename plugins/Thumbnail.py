@@ -14,7 +14,7 @@ from translation import Translation
 import database.database as sql
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
-from pyrogram import Client, filters 
+from pyrogram import Client, Filters 
 
 @Client.on_message(filters.photo)
 async def save_photo(bot, update):
