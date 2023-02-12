@@ -1,4 +1,4 @@
-6272880673:AAHjRAdd8Xosyv6u65F60OYMv0PbEoIJOzc
+80353e5f8ce893d1366e804c0375c919
 
 - [X] Added password for using bot as private 
 - [X] Added database for permanent thumbnail 
